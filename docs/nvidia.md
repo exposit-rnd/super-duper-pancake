@@ -1,11 +1,17 @@
 # Экосистема: NVIDIA
 
+Важные заметки:
+
+* [`Архитектуры GPU карт и грейды вычислительной мощности`](https://arnon.dk/matching-sm-architectures-arch-and-gencode-for-various-nvidia-cards/) Важно понимать, что у разных поколений карт значительная разница в архитектуре и мощности. Многие продукты будут работать только с определённой архитектурой.
+
+Общие пункты:
+
 * [**`Solutions & Industries`**](https://developer.nvidia.com/solutions-and-industries) Главная страница с разбиением на технологии и индустрии.
 * [`Deep Learning Institute`](https://www.nvidia.com/en-us/training/) Платформа с обучающими материалами Nvidia по DL тематике.
   * [`Self-Paced Online Training`](https://www.nvidia.com/en-us/training/online/) Список доступных курсов для изучения.
   * [`Educator Programs`](https://www.nvidia.com/en-us/training/educator-programs/) Обучающие программы с воркшопами для студентов.
 
-## **HPC**: High-Performance Computing
+## [**HPC**: High-Performance Computing](https://developer.nvidia.com/hpc)
 
 ### Tools & Ecosystem
 
@@ -16,7 +22,7 @@
 * [**`HPC SDK`**](https://developer.nvidia.com/hpc-sdk)
 * [`IndeX® 3D`](https://developer.nvidia.com/nvidia-index)
 
-* [**`Nsight Deep Learning Designer`**](https://developer.nvidia.com/nsight-dl-designer) IDE для дизайна и работы с DL моделями, инференса, профайлинга, сбора метрик, анализа моделей.
+* [**`Nsight Deep Learning Designer`**](https://developer.nvidia.com/nsight-dl-designer) IDE для дизайна и работы с DL моделями, инференса, профайлинга, сбора метрик, анализа моделей. Обязательное требование: [sm70+](https://arnon.dk/matching-sm-architectures-arch-and-gencode-for-various-nvidia-cards/).
 
 ### Performance Analysis Tools
 
@@ -25,3 +31,16 @@
 * [`Nsight Systems`](https://developer.nvidia.com/nsight-systems) Низкоуровневый визуальный мониторинг аппаратной загруженности при работе с приложениями. Позволяет определить наилучшие возможности для оптимизации приложения.
 * [**`Nsight Compute`**](https://developer.nvidia.com/nsight-compute) Интерактивный kernel профайлер для CUDA приложений.
 * [`DCGM`](https://developer.nvidia.com/dcgm) Мониторинг датацентров с кластерами видеокарт Nvidia. Health мониторинг, диагностика загрузки, системные нотификации.
+
+## [NVIDIA Maxine](https://developer.nvidia.com/maxine)
+
+SDK с набором SOTA моделей и технологий, который позволяет разработчикам создавать приложения для виртуальной совместной работы и создания контента, такие как видеоконференции и потоковое вещание.
+
+Основные направления:
+
+* **Video Effects**: Super resolution, upscaler, artifact reduction, video noise removal, virtual background.
+* **Augmented Reality**: Face detection, mesh, keypoints, body pose estimation, eye contact, audio2face.
+* **Audio Effects**: Noise removal, room echo removal, audio super resolution, acoustic echo cancellation.
+
+Технические требования **SM70+**:
+*Windows SDK: NVIDIA® GeForce RTX® 20XX and 30XX Series, Quadro RTX™ 3000, TITAN RTX™, or higher (any NVIDIA GPUs with Tensor Cores) Server SDK: V100, T4, A10, A30, A100 (with MIG support)*
