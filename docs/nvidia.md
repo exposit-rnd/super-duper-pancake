@@ -4,9 +4,14 @@
 
 * [`Архитектуры GPU карт и грейды вычислительной мощности`](https://arnon.dk/matching-sm-architectures-arch-and-gencode-for-various-nvidia-cards/) Важно понимать, что у разных поколений карт значительная разница в архитектуре и мощности. Многие продукты будут работать только с определённой архитектурой.
 
+Статьи от NVIDIA:
+
+* [`What Is MLOps?`](https://blogs.nvidia.com/blog/2020/09/03/what-is-mlops/)
+
 ## Общие ссылки и технологии
 
 * [**`Solutions & Industries`**](https://developer.nvidia.com/solutions-and-industries) Главная страница с разбиением на технологии и индустрии.
+* [**`Download Center`**](https://developer.nvidia.com/gameworksdownload) Архив ссылок на все продукты компании.
 * [`Deep Learning Institute`](https://www.nvidia.com/en-us/training/) Платформа с обучающими материалами Nvidia по DL тематике.
   * [**`Self-Paced Online Training`**](https://www.nvidia.com/en-us/training/online/) Список доступных курсов для изучения.
   * [`Educator Programs`](https://www.nvidia.com/en-us/training/educator-programs/) Обучающие программы с воркшопами для студентов.
@@ -14,19 +19,23 @@
 * [**`CUDA Toolkit`**](https://developer.nvidia.com/cuda-toolkit) Окружение разработки для работы с графическими ускорителями Nvidia.
 * [`CUDA Python`](https://developer.nvidia.com/cuda-python) Cython & Python обёртка для вызова CUDA функций и работы с CUDA driver/runtime API.
 * [`CUDA-X`](https://developer.nvidia.com/gpu-accelerated-libraries) Документация по коллекции CUDA библиотек, инструментов и технологий с поддержкой аппаратного ускорения. В коллекцию входят библиотеки для работы с изображениями, видео, математическими - тензорными операциями и т.д.
-* [**`Download Center`**](https://developer.nvidia.com/gameworksdownload) Архив ссылок на все продукты компании.
 
 ## [**HPC**: High-Performance Computing](https://developer.nvidia.com/hpc)
 
 ### Tools & Ecosystem
 
-* [**`HPC SDK`**](https://developer.nvidia.com/hpc-sdk) C, C++, Fortran компиляторы и набор библиотек для работы с самыми различными математическими задачами на GPU. Лучше читать подробней самому.
+* [**`HPC SDK`**](https://developer.nvidia.com/hpc-sdk) C, C++, Fortran компиляторы и набор библиотек для работы с самыми различными математическими задачами на GPU. Лучше читать подробней самому. *Требования: Linux.*
+* [**`RAPIDS`**](https://developer.nvidia.com/rapids) Ускоренный с GPU Pandas на максималках. *Требования: Linux, CC6.0+.*
 * [`OpenCL`](https://developer.nvidia.com/opencl)
 * [`IndeX® 3D`](https://developer.nvidia.com/nvidia-index)
 
 ### Models Tools
 
-* [**`Nsight Deep Learning Designer`**](https://developer.nvidia.com/nsight-dl-designer) IDE для дизайна и работы с DL моделями, инференса, профайлинга, сбора метрик, анализа моделей. Обязательное требование: [sm70+](https://arnon.dk/matching-sm-architectures-arch-and-gencode-for-various-nvidia-cards/).
+* [**`Nsight Deep Learning Designer`**](https://developer.nvidia.com/nsight-dl-designer) IDE для дизайна и работы с DL моделями, инференса, профайлинга, сбора метрик, анализа моделей. *Требования: SM70+.*
+
+### Graphics Debugging
+
+* [`Nsight Graphics`](https://developer.nvidia.com/nsight-graphics) Дебаггинг и анализ GUI приложений на Windows и Linux под Direct3D, DirectX, OpenGL, Vulkan.
 
 ### Performance Analysis Tools
 
@@ -56,9 +65,9 @@
 
 #### Inference
 
-* [**`TensorRT`**](https://developer.nvidia.com/tensorrt)
+* [**`TensorRT`**](https://developer.nvidia.com/tensorrt) Оптимизатор нейронных моделей для ускорения инференса. В особенности необходим и классно работает на Edge девайсах.
 * [**`DeepStream SDK`**](https://developer.nvidia.com/deepstream-sdk)
-* [**`Triton Inference Server`**](https://developer.nvidia.com/nvidia-triton-inference-server)
+* [**`Triton Inference Server`**](https://developer.nvidia.com/nvidia-triton-inference-server) Выделенный сервер для инференса моделей, их оркестрации, метрик и масштабирования с Kubernetes.
 
 #### Development
 
@@ -68,7 +77,10 @@
 
 [**NGC | NVIDIA GPU Cloud**](https://catalog.ngc.nvidia.com/) Платформа с обученными и оптимизированными моделями под все поддерживаемые фреймворки, Docker контейнерами, Helm Charts и прочими ресурсами.
 
-## [NVIDIA Maxine](https://developer.nvidia.com/maxine) - VIDEO & AUDIO SOTA SDK
+## SDK
+
+
+### [**Maxine**](https://developer.nvidia.com/maxine) Видео, аудио & AR 📹
 
 SDK с набором SOTA моделей и технологий, который позволяет разработчикам создавать приложения для виртуальной совместной работы и создания контента, такие как видеоконференции и потоковое вещание.
 
@@ -81,4 +93,26 @@ SDK с набором SOTA моделей и технологий, которы�
 Технические требования **SM70+**:
 *Windows SDK: NVIDIA® GeForce RTX® 20XX and 30XX Series, Quadro RTX™ 3000, TITAN RTX™, or higher (any NVIDIA GPUs with Tensor Cores) Server SDK: V100, T4, A10, A30, A100 (with MIG support)*
 
-## [NVIDIA Clara](https://developer.nvidia.com/clara) - HEALTHCARE AND LIFE SCIENCES
+### [**Clara**](https://developer.nvidia.com/clara) Здравоохранение 👩‍⚕️
+
+
+### [**Riva**](https://developer.nvidia.com/riva) Speech AI 🙊
+
+
+### [**Isaac**](https://developer.nvidia.com/isaac-sdk) Роботизация 🤖
+
+
+### [**Merlin**](https://developer.nvidia.com/nvidia-merlin) Рекомендательные системы 📦
+
+
+### [**Jetson**](https://developer.nvidia.com/embedded-computing) Встраиваемые вычисления
+
+
+## Services
+
+
+### [LaunchPad](https://www.nvidia.com/en-us/data-center/launchpad/) NVIDIA AWS
+
+### [Base Command](https://www.nvidia.com/en-us/data-center/base-command/) AI training platform
+
+### [Fleet Command](https://www.nvidia.com/en-us/data-center/products/fleet-command/) Edge AWS
